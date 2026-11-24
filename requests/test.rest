@@ -1,0 +1,54 @@
+DELETE http://localhost:3001/api/persons/3
+
+###
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "a",
+    "number": "123"
+}
+
+###
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Dan Abramov",
+    "number": "123"
+}
+
+###
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "a"
+}
+
+###
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "number": "a"
+}
+
+###
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/info
+
+
+###
+GET http://localhost:3001/api/persons/1
+
+###
+GET http://localhost:3001/api/persons/6b05531af5f862064e02cb20
+
+###
+DELETE http://localhost:3001/api/persons/6b05531af5f862064e02cb20
+
+###
+DELETE http://localhost:3001/api/persons/1
