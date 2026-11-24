@@ -1,5 +1,5 @@
 const express = require('express')
-const morgan = require('morgan')
+// const morgan = require('morgan')
 const cors = require('cors')
 
 const app = express()
@@ -8,13 +8,13 @@ app.use(cors())
 app.use(express.static('dist'))
 const PORT = 3001
 
-morgan.token('content-size', (req, res) => {
-    return req.headers['content-length'] || 0
-})
+// morgan.token('content-size', (req, res) => {
+//     return req.headers['content-length'] || 0
+// })
 
-app.use(morgan(':method :url :status :content-size :response-time ms', {
-    skip: (req, _) => req.method !== 'POST'
-}))
+// app.use(morgan(':method :url :status :content-size :response-time ms', {
+//     skip: (req, _) => req.method !== 'POST'
+// }))
 
 
 let data = [
